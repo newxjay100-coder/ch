@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F7F4EE;
+    --bg-secondary: #F0ECE2;
+    --text-primary: #20201E;
+    --text-secondary: #635F57;
+    --text-muted: #8E8980;
+    --burgundy: #5A2428;
+    --burgundy-dark: #3E1619;
+    --burgundy-light: #7B353A;
+    --gold: #B69A63;
+    --gold-dark: #8F7644;
+    --gold-light: #CEBA8E;
+    --stone: #AAA59B;
+    --stone-light: #DDD9D0;
+    --stone-dark: #6E6960;
+    --teal: #5C989A;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    background-image: url('/images/church_brick_pattern.svg');
+    background-repeat: repeat;
+    color: var(--text-primary);
+    font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.015em;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* Subtle Authentic Church Brick Architectural Patterns */
+  .church-brick-bg {
+    background-color: #FAF8F5;
+    background-image: url('/images/church_brick_pattern.svg');
+    background-repeat: repeat;
+  }
+
+  .church-brick-overlay {
+    background-image: url('/images/church_brick_pattern.svg');
+    background-repeat: repeat;
+  }
+
+  /* Font Scaling for elderly parishioners */
+  html.font-scale-normal {
+    font-size: 16px;
+  }
+  html.font-scale-large {
+    font-size: 18px;
+  }
+  html.font-scale-xlarge {
+    font-size: 20px;
+  }
+
+  /* High contrast mode for accessibility */
+  html.high-contrast {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F2F2F2;
+    --text-primary: #000000;
+    --text-secondary: #1F1F1F;
+    --burgundy: #400005;
+    --gold: #7A5B00;
+    --stone: #555555;
+  }
+
+  /* Typography helpers */
+  .font-serif-kr {
+    font-family: "Noto Serif KR", "MaruBuri", "Batang", serif;
+  }
+  .font-display-en {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+}
+
+/* Custom dignified subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F0ECE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BFB3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A39D90;
+}
+
+/* Print styling for Parish Bulletin / Mass Schedules */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

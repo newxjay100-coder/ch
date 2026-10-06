@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" viewBox="0 0 60 30">
+  <defs>
+    <!-- Richer authentic terracotta brick clay tones from Hangang Catholic Church facade -->
+    <linearGradient id="brick1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#99383E" stop-opacity="0.085" />
+      <stop offset="100%" stop-color="#6F2428" stop-opacity="0.120" />
+    </linearGradient>
+    <linearGradient id="brick2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#843236" stop-opacity="0.075" />
+      <stop offset="100%" stop-color="#A24248" stop-opacity="0.110" />
+    </linearGradient>
+  </defs>
+
+  <!-- Row 1: Two staggered bricks with mortar joint in between -->
+  <rect x="1.5" y="1.5" width="27" height="12" rx="0.5" fill="url(#brick1)" stroke="#5A2428" stroke-width="0.5" stroke-opacity="0.08" />
+  <rect x="31.5" y="1.5" width="27" height="12" rx="0.5" fill="url(#brick2)" stroke="#5A2428" stroke-width="0.5" stroke-opacity="0.08" />
+
+  <!-- Row 2: Brick across bottom -->
+  <rect x="1.5" y="16.5" width="57" height="12" rx="0.5" fill="url(#brick2)" stroke="#5A2428" stroke-width="0.5" stroke-opacity="0.08" />
+
+  <!-- Mortar lines (authentic running bond masonry - clear and distinct) -->
+  <!-- Horizontal mortar bed lines -->
+  <line x1="0" y1="15" x2="60" y2="15" stroke="#8C654D" stroke-width="1.0" stroke-opacity="0.22" stroke-linecap="round" />
+  <line x1="0" y1="30" x2="60" y2="30" stroke="#8C654D" stroke-width="1.0" stroke-opacity="0.22" stroke-linecap="round" />
+  <line x1="0" y1="0" x2="60" y2="0" stroke="#8C654D" stroke-width="1.0" stroke-opacity="0.22" stroke-linecap="round" />
+
+  <!-- Vertical mortar head joints -->
+  <line x1="30" y1="0" x2="30" y2="15" stroke="#8C654D" stroke-width="1.0" stroke-opacity="0.22" stroke-linecap="round" />
+  <line x1="0" y1="15" x2="0" y2="30" stroke="#8C654D" stroke-width="1.0" stroke-opacity="0.22" stroke-linecap="round" />
+  <line x1="60" y1="15" x2="60" y2="30" stroke="#8C654D" stroke-width="1.0" stroke-opacity="0.22" stroke-linecap="round" />
+</svg>
